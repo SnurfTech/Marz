@@ -1,2 +1,2 @@
-# marz
-A package manager for linux.
+# Marz
+A package manager for Linux.
