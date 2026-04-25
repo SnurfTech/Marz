@@ -4,6 +4,37 @@ export PRE_REMOVE=prerm.sh
 export POST_INSTALL=postinst.sh
 export POST_REMOVE=postrm.sh
 
+case "$1" in
+  -h|--help|\?)
+    help
+    ;;
+esac
+
+help() {
+cat <<'EOF'
+Marz Package Manager (bash)
+
+Usage:
+  marz <command> [args]
+
+Commands:
+  build <workdir> [output]        Build a .marz package
+  install <package> [--upgrade]   Install package
+  remove <package>                Remove installed package
+  upgrade <pkg> <file.marz>       Upgrade package
+  downgrade <pkg> <file.marz>     Downgrade package
+  extract <package> <dir>         Extract package
+  setup                           Initialize system directories
+
+Options:
+  -h, --help, -?                  Show this help
+
+Notes:
+  Requires root privileges and GNU coreutils.
+EOF
+exit 0
+}
+
 error() {
 	echo "ERROR: $@"
 	exit 1
