@@ -1,5 +1,5 @@
 # Marz
-An simple yet awesome compact package manager for <b>GNU Linux</b> that is literally just a single bash script! (Please note that this script could be improved A LOT. If someone does it, I'd really like to see.)
+A simple yet awesome compact package manager for <b>GNU Linux</b> that is literally just a single bash script! (Please note that this script could be improved A LOT. If someone does it, I'd really like to see.)
 
 Type ```marz --help``` for the help menu.
 
